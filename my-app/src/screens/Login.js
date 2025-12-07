@@ -25,7 +25,7 @@ function Login() {
     if (res.ok) {
       localStorage.setItem('userEmail', email); // Store email for profile fetching
       // Redirect to dashboard on success
-      navigate('/Dashboard');
+      navigate('/dashboard');
     }
   };
 
