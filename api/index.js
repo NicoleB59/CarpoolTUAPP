@@ -7,7 +7,8 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB URI (replace password if needed)
-const uri = "mongodb+srv://b00157129_db_user:Bula1384cao@cluster0.hetflnn.mongodb.net/?appName=Cluster0";
+// const uri = "mongodb+srv://b00157129_db_user:Bula1384cao@cluster0.hetflnn.mongodb.net/?appName=Cluster0";
+const uri = process.env.MONGODB_URI;
 
 const client = new MongoClient(uri, {
   serverApi: {
