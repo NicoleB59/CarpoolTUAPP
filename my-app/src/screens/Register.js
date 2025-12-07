@@ -22,7 +22,10 @@ function Register() {
     });
 
     const result = await res.json();
-    alert(result.message);
+    alert(JSON.stringify(result, null, 2));
+    console.log("Status:", res.status);
+    console.log("Result:", result);
+
 
     if (res.ok) {
       // Redirect to dashboard on success
