@@ -43,7 +43,7 @@ function Dashboard() {
   }, []);
 
   const handleStartSearch = () => {
-    navigate('/Searching');
+    navigate('/searching');
   };
 
   const handleProfile = () => {

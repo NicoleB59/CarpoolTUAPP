@@ -52,10 +52,11 @@ function Login() {
           required
         />
 
-        {/* Register link */}
+       {/* ✅ MUST BE LOWERCASE */}
         <p className="register-link">
-         
-          <Link to="/Register"> Haven't made an account? Register Here!</Link>
+          <Link to="/register">
+            Haven&apos;t made an account? Register Here!
+          </Link>
         </p>
 
         <button type="submit">Login</button>

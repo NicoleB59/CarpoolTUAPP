@@ -26,7 +26,7 @@ function Register() {
 
     if (res.ok) {
       // Redirect to dashboard on success
-      navigate('/Dashboard');
+      navigate('/dashboard');
     }
   };
 
