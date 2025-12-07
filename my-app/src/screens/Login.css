@@ -1,0 +1,74 @@
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 2px solid #003366; /* TU Dublin dark blue */
+  border-radius: 8px;
+  background-color: #f0f8ff; /* light blue accent background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #003366;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #0072CE;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Register link text */
+.register-link {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #003366;
+}
+
+.register-link a {
+  color: #0072CE;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.login-form button:hover {
+  background-color: #0072CE;
+}
