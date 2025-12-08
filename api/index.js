@@ -11,6 +11,10 @@ app.use(express.json());
 // const uri = "mongodb+srv://b00157129_db_user:Bula1384cao@cluster0.hetflnn.mongodb.net/?appName=Cluster0";
 const uri = process.env.MONGODB_URI;
 
+require('dotenv').config();
+console.log("ENV TEST:", process.env.MONGODB_URI);
+
+
 if (!uri) {
   console.error("❌ MONGODB_URI is missing in production!");
 } else {
