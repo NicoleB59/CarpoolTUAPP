@@ -59,7 +59,11 @@ function Login() {
           </Link>
         </p>
 
-        <button type="submit">Login</button>
+        {/* <button type="submit">Login</button> */}
+        {/* Button */}
+       <button type="submit" onClick={handleLogin}>
+        Login
+      </button>
       </form>
     </div>
   );

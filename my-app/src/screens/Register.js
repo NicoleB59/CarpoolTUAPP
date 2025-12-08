@@ -12,26 +12,26 @@ function Register() {
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {
-    e.preventDefault();
-    const data = { name, email, phone, password };
+      e.preventDefault();
+      const data = { name, email, phone, password };
 
-    const res = await fetch('/api/register', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
+      const res = await fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
 
-    const result = await res.json();
-    alert(JSON.stringify(result, null, 2));
-    console.log("Status:", res.status);
-    console.log("Result:", result);
+      const result = await res.json();
+      alert(JSON.stringify(result, null, 2));
+      console.log("Status:", res.status);
+      console.log("Result:", result);
 
 
-    if (res.ok) {
-      // Redirect to dashboard on success
-      navigate('/dashboard');
-    }
-  };
+      if (res.ok) {
+        // Redirect to dashboard on success
+        navigate('/dashboard');
+    };
+  }
 
 
   return (
