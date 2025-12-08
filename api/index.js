@@ -16,9 +16,9 @@ console.log("ENV TEST:", process.env.MONGODB_URI);
 
 
 if (!uri) {
-  console.error("❌ MONGODB_URI is missing in production!");
+  console.error("MONGODB_URI is missing in production!");
 } else {
-  console.log("✅ MONGODB_URI loaded");
+  console.log("MONGODB_URI loaded");
 }
 
 const client = new MongoClient(uri, {
